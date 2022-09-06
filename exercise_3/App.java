@@ -1,9 +1,7 @@
-import java.util.Stack;
-
 public class App {
     public static void main(String[] args) {
 
-        Stack<String>  paper_stack = new Stack<>();
+        Stack  paper_stack = new Stack(6);
 
         // arranging t-shirts in a stack
         paper_stack.push("blue paper");
@@ -11,6 +9,8 @@ public class App {
         paper_stack.push("orange paper");
         paper_stack.push("violet paper");
         paper_stack.push("yellow paper");
+        paper_stack.push("pink paper");
+
 
         // Show the size of the stack
         System.out.println("The amount of papers are: " + paper_stack.size());
@@ -20,7 +20,7 @@ public class App {
 
         // Remove top element in the stack
         paper_stack.pop();
-
+    
         // Show all elements in Stack
         System.out.println("Plates left:  " + paper_stack);
 
