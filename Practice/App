@@ -1,0 +1,34 @@
+import java.util.*;
+
+public class App {
+    public static void main(String args[]) {
+        Hashtable<String, String> ContactList = new Hashtable<String, String>();
+
+        // Put
+        // Inserts key-value pairs in a hash table.
+        ContactList.put("Alexander Cadorna", "09263494590");
+        ContactList.put("Kean Lalo", "09662174448");
+        ContactList.put("Jethro Vargas", "09674402561");
+        ContactList.put("Alyzza Senopera", "09061249440");
+        ContactList.put("Jonathan Vargas", "09159171355");
+
+        // Remove
+        // Removes key-value pairs in a hash table.
+        ContactList.remove("Alexander Cadorna");
+
+        // Get
+        // Retrieves a value in a hash table using a key.
+        System.out.println(ContactList.get("Jethro Vargas"));
+
+        // Size
+        // Returns the total number of key-value pairs in the hash table.
+        System.out.println(ContactList.size());
+
+        // Show all content of hash table
+        System.out.println(ContactList);
+
+        // Clear
+        // Resets and empties the hash table.
+        ContactList.clear();
+    }
+}
